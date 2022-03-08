@@ -1,0 +1,72 @@
+/* start services */  
+.service{
+    margin: 100px 0;
+    .container{
+        >h3{
+            @include headDes();
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            @include secHead();
+            text-align: center;
+        }
+        .servs{
+            margin-top: 50px;
+            >div{
+                padding: 0 !important;
+                transition: .3s;
+                overflow: hidden;
+                &:hover{
+                    background-color: #191C24 !important;
+                    .plus{
+                        transform: translateX(0%) translateY(0%);
+                    }
+                }
+                .plus{
+                    bottom: 0;
+                    right: 0;
+                    background-color: $mainColor;
+                    transform: translateX(100%) translateY(100%);
+                    transition: .3s;
+                    a{
+                        height: 40px;
+                        width: 40px;
+                        color: #fff;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 40px;
+                 }
+                }
+                .icon{
+                    background-color: #000;
+                    height: 60px;
+                    width: 120px;
+                    text-align: center;
+                    line-height: 60px;
+                    img{
+                        width:30px;
+                    }
+                }
+                .text{
+                    padding-left: 30px;
+                    h3{
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        font-weight: 800;
+                    }
+                    p{
+                        margin: 15px 0;
+                    }
+                    h4{
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+/* end services */ 

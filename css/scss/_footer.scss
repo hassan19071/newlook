@@ -1,0 +1,82 @@
+/* start footer */ 
+.footer{
+    margin-top: 100px;
+    background-color: #191C24 !important;
+    .head{
+        h3{
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .info{
+            ul{
+                margin-top:20px;
+                li{
+                    margin: 10px 0;
+                    span:first-of-type{
+                        background-color: #000;
+                        height: 35px;
+                        width: 35px;
+                        text-align: center;
+                        line-height: 35px;
+                        color: $mainColor;
+                    }
+                    span:last-of-type{
+                        margin-left: 10px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .links{
+            ul{
+                margin-top: 20px;
+                li{
+                    margin: 10px 0;
+                    a{
+                        color: rgb(138, 135, 135);
+                        transition: .4s;
+                        i{
+                            margin-right: 5px;
+                        }
+                        &:hover{
+                            color: $mainColor;
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+        .sellter{
+            form{
+                margin-top:20px;
+                input{
+                    padding:15px 10px;
+                    outline: none;
+                    border: none;
+                }
+                input[type="submit"]{
+                    right: 0;
+                    background-color: $mainColor;
+                    color: #fff;
+                    font-weight: 600;
+                }
+            }
+            .icons{
+                a{
+                    background-color: #000;
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+
+    .foot{
+        background-color: #000;
+        a{
+            color: $mainColor !important;
+            letter-spacing: 2px;
+            text-decoration: underline;
+        }
+    }
+}
+/* end footer */ 

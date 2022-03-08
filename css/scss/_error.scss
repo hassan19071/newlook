@@ -1,0 +1,33 @@
+/* start error */ 
+.error{
+    margin: 100px 0;
+    .content{
+        i{
+            font-size: 50px;
+            color: $mainColor;
+        }
+        h1{
+            margin: 10px 0;
+            font-size: 50px;
+        }
+        h2{
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        p{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            @media (max-width:720px) {
+                width: 80%;
+            }
+        }
+        a{
+            background-color: $mainColor;
+            border: none;
+            color: #fff;
+            padding: 10px 30px;
+        }
+    }
+}
+/* end error */ 

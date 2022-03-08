@@ -1,0 +1,174 @@
+/* start nav */ 
+.navbar{
+    background-color: rgb(36, 35, 35) !important;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+    &.fixed{
+        position: sticky;
+        z-index: 10 !important;
+        width: 100%;
+        top: 0;
+    }
+    .navbar-brand{
+        padding: 0;
+        i{
+            margin-right: 10px;
+        }
+        color: $mainColor !important;
+        font-size: 35px;
+        font-weight: 900;
+        text-transform:uppercase;
+        letter-spacing:-5px;
+        @media (max-width:720px) {
+            font-size: 27px;
+        }
+    }
+    .navbar-toggler{
+        width: 55px;
+        border: none;
+        box-shadow: 1px 1px 3px 0 rgb(128, 126, 126) , -1px -1px 3px 0 rgb(128, 126, 126) !important;
+        span{
+            display: block;
+            width: 100%;
+            height: 1.8px;
+            background-color: rgb(128, 126, 126);
+            margin: 8px 0;
+        }
+    }
+    .navbar-nav{
+         @media (max-width:991px) {
+            padding-top: 20px !important;
+            border-top: 2px solid rgb(128, 126, 126);
+            margin-top: 20px;
+         }
+            >li{
+                margin: 0 10px;
+                >a{
+                    color: rgb(182, 180, 180) !important;
+                    text-transform: uppercase;
+                    padding: 30px 0 !important;
+                    display: inline-block;
+                    font-weight: 600;
+                    transition: .3s;
+                    &.active , &:hover{
+                        color: $mainColor !important;
+                    }
+                    @media (max-width:991px) {
+                        padding: 0px 0 !important;
+                        margin: 10px 0;
+                    }
+                }
+                 @media (min-width:991px) {
+                    &.dropdown:hover{
+                        ul{
+                            visibility: visible;
+                            transform: translateY(100%);
+                            opacity: 1;
+                        }
+                    }
+                 }
+                ul{
+                    width: 100%;
+                    bottom: 0 !important;
+                    top: auto;
+                    transition:all .5s;
+                    @media (min-width:991px) {
+                        transform: translateY(150%);
+                        display: block !important;
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                    li{
+                        margin: 5px 0;
+                    }
+                }
+            }
+    }
+    .button{
+        background-color: $mainColor;
+        margin-left: 20px;
+        a{
+            padding:30px !important;
+            display: inline-block;
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+}
+/* end nav */ 
+
+
+/* start header */
+.header{
+    .carousel{
+        .layout{
+            left: 0;
+            background-color: rgba($color: #000000, $alpha:0.8);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            user-select:none;
+        }
+        .carousel-item{
+            @media (min-width:991px) {
+                height: 80vh !important;
+            }
+        }
+        .content{
+            top: 50%;
+            bottom: auto;
+            transform: translateY(-50%);
+            .text{
+                h1{
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 50px;
+                    font-weight: 900;
+                    width: 60%;
+                    margin-bottom: 30px;
+                    span{
+                        color: $mainColor;
+                    }
+                    @media (max-width:720px) {
+                        font-size: 30px;
+                        width: 90%;
+                    }
+                }
+                h4{
+                    color: #fff;
+                    font-size: 23px;
+                    font-weight: 600;
+                    margin: 20px 0;
+                    @media (max-width:720px) {
+                        font-size: 19px;
+                    }
+                    i{
+                        color: $mainColor;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .carousel-control-prev,.carousel-control-next{
+            width: 50px;
+            height: 50px;
+            background-color: $mainColor;
+            border: 2px solid $mainColor;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0;
+            text-align: center;
+            line-height: 68px;
+        }
+        .carousel-control-prev{
+            left: 3%;
+        }
+        .carousel-control-next{
+            right: 3%;
+        }
+    }
+}
+/* end header */ 

@@ -1,0 +1,35 @@
+/* start contact */ 
+.contact{
+    margin: 100px 0;
+    .content{
+        .cont-text{
+            background-color: #191C24 !important;
+            .text{
+                h3{
+                    @include headDes;
+                    padding-top: 30px;
+                }
+                h1{
+                    @include secHead;
+                }
+                p{
+                    line-height: 2;
+                }
+                form{
+                    margin-top: 20px;
+                    padding-bottom: 30px;
+                    input,textarea{
+                        background-color: transparent;
+                        border: 1px solid rgb(138, 135, 135);
+                        box-shadow: none;
+                    }
+                    button{
+                        background-color: $mainColor;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+/* end contact */ 

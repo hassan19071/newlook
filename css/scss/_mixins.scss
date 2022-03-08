@@ -1,0 +1,39 @@
+@mixin headDes {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    width: fit-content;
+    text-transform: uppercase;
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        height: 2px;
+        left: 0;
+        width: 100%;
+        background-color: $mainColor;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        height: 2px;
+        left: 50%;
+        width: 50%;
+        background-color: $mainColor;
+        transform: translateX(-50%);
+    }
+}
+
+@mixin secHead {
+            font-size: 30px;
+            font-weight: 800;
+            line-height: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            @media (max-width:720px) {
+                font-size: 24px;
+                font-weight: 600;
+            }
+}

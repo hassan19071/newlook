@@ -1,0 +1,78 @@
+/* start barbers */ 
+.barbers{
+    margin: 100px 0;
+    .container{
+        >h3{
+            @include headDes;
+         }
+         h1{
+             @include secHead;
+         }
+         .content{
+             background-color: #191C24 !important;
+             margin-top: 30px;
+             padding-bottom: 20px;
+             &:hover{
+                .img::before , &:hover .img::after{
+                    transform: translateX(0);
+                }
+                .img .icons {
+                    visibility: visible;
+                    opacity: 1;
+                }
+             }
+             .img{
+                 .icons{
+                     z-index: 2;
+                     top: 50%;
+                     left: 50%;
+                     transform: translateX(-50%) translateY(-50%);
+                     visibility: hidden;
+                     text-align: center;
+                     opacity: 0;
+                     transition:all .5s ease-in;
+                     a{
+                         background-color: #000;
+                         color: $mainColor;
+                         &:hover{
+                             background-color: $mainColor;
+                             color: #fff;
+                         }
+                     }
+                 }
+                 &::before{
+                     content: '';
+                     position: absolute;
+                     width: 50%;
+                     height: 100%;
+                     background-color: rgba(0, 0, 0, 0.808);
+                     z-index: 1;
+                     transform: translateX(-100%);
+                     left: 0;
+                     transition: .3s;
+                 }
+                 &::after{
+                    content: '';
+                    position: absolute;
+                    width: 50%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.808);
+                    z-index: 1;
+                    right: 0;
+                    transform: translateX(100%);
+                    transition: .3s;
+                }
+             }
+             h3{
+                 font-size: 18px;
+                 text-transform: uppercase;
+                 margin: 20px 0 10px;
+             }
+             p{
+                 color: $mainColor;
+                 font-weight: 600;
+             }
+         }
+    }
+}
+/* end barbers */ 
